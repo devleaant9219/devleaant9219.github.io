@@ -2,11 +2,12 @@
 <html>
     <head>
       <title>About Me</title>
-        <meta charset="UTF-8">
-        <link href="blog.css" type="text.css" rel="stylesheet" />
-    </head>
+        <!--<meta charset="UTF-8">
+       <!-- <link href="blog.css" type="text.css" rel="stylesheet" />-->
 
-   <body>
+
+
+    <!--
 
     <div>
       <h1>Devon L. Anthony</h1>
@@ -24,23 +25,18 @@
 
       <div>
         <p>
-        <figure>
-         <img src="devon_rock.jpeg"/>
-           <br />
-           <figcaption>The Yung Gud Zenning in Nature.</figcaption>
-        </figure>
-      </p>
+         <img src="devon_rock.jpeg" class="rock"/>
+        </p>
       </div>
 
      <div>
       <p>
-      <figure>
-        <img src="devon_paris.jpg"/>
-          <br />
-          <figcaption>A Yung Ninja in Paris.</figcaption>
-      </figure>
-    </p>
+       <!-- <img src="devon_paris.jpg" class="paris"/>
+      </p>
     </div>
+
+
+
 
 
       <div>
@@ -78,9 +74,252 @@
               <form action="http://www.example.com/comments.php">
                 <p>What do you think of this blog?</p>
                 <textarea name="comments" cols="20" rows="4">Enter your comments...</textarea>
-              </form>
               <input type="submit" name="submit" value="Submit" />
+              </form>
             </div>
+          -->
+
+          <style type="text/css">
+
+            header, section, footer, aside, nav, article, figure, figcaption {
+              display: block;
+            }
+
+              body {
+                color: #666666;
+                background-color: #f9f8f6;
+                background-image: url("austin-tx-hdr-68400.jpg");
+                background-position: center;
+                font-family: Georgia, Times, serif;
+                line-height: 1.4 em;
+                margin: 0px;}
+
+                .wrapper {
+                  width: 940px;
+                  margin: 20px auto 20px auto;
+                  border: 2px solid #000000;
+                  background-color: #ffffff;}
+
+                header {
+                  height: 160px;
+                  background-image: url("header.jpg");}
+
+
+                h1 {
+                  text-indent:  -9999px;
+                  width: 940px;
+                  height: 130px;
+                  margin: 0px;}
+
+
+                nav, footer {
+                  clear: both;
+                  color: #ffffff;
+                  background-color: #aeaca8;
+                  height: 30px;}
+
+                nav ul {
+                  margin: 0px;
+                  padding: 5px 0px 5px 30px;}
+
+                nav li {
+                  display: inline;
+                  margin-right: 40px;}
+
+                nav li a {
+                  color: #ffffff;
+                }
+
+                nav li a:hover, nav li a.current {
+                  color:#000000;
+                }
+
+                section.courses {
+                  float: left;
+                  width: 659px;
+                  border-right: 1px solid #eeeeee;
+                }
+
+                article {
+                  clear: both;
+                  overflow: auto;
+                  width: 100%;
+                }
+
+                hgroup {
+                  margin-top: 40px;
+                }
+
+                figure {
+                  float: left;
+                  width: 290px;
+                  height: 220px;
+                  padding: 5px;
+                  margin: 20px;
+                  border: 1px solid #eeeeee;}
+
+                figcaption {
+                  font-size: 90%;
+                  text-align: left;
+                }
+
+                aside {
+                  width: 230px;
+                  float: left;
+                  padding: 0px 0px 0px 20px;
+                }
+
+                aside section a {
+                  display: block;
+                  padding: 10px;
+                  border-bottom: 1px solid #eeeeee;
+                }
+                 aside section a:hover {
+                  color #985d6a;
+                  background-color: #efefef;
+                }
+
+                a {
+                  color: #de6581;
+                  text-decoration: none; }
+                }
+
+                h1, h2, h3 {
+                  font-weight: normal;
+                }
+
+                h2 {
+                  margin: 20px 0px 5px 0px;
+                  padding: 0px;
+                }
+
+                h3 {
+                  margin: 0px 0px 10px 0px;
+                  color:  #de6581;
+                }
+
+                aside h2 {
+                  padding: 30px 0px 10px 0px;
+                  color: #de6581;
+                }
+
+                footer {
+                  font-size: 80%;
+                  padding: 7px 0px 0px 20px;
+                }
+          </style>
+
+        </head>
+
+        <body>
+          <div class="wrapper">
+            <header>
+              <h1>Devon's Blog</h1>
+              <nav>
+                <ul>
+                  <li><a href="index.html"class="current">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                </ul>
+              </nav>
+            </header>
+
+            <section class=" about devon">
+              <article>
+                <figure>
+                  <img src="devon_rock.jpeg" class="rock"/>
+                  <figcaption>Zenning in Nature</figcaption>
+                </figure>
+                <hgroup>
+                  <h2>Lorem Ipsum</h2>
+                  <h3>Smaller Lorem Ipsum</h3>
+                </hgroup>
+                <p>This is a cool paragraph that describes me sitting on a rock with a gentle flowing current behind me.</p>
+              </article>
+              <article>
+                <figure>
+                  <img src="devon_rock.jpeg" class="rock"/>
+                  <figcaption>Still Out Here Zennin'</figcaption>
+                </figure>
+                <hgroup>
+                  <h2>Duex Paragraphi</h2>
+                  <h3>Sub Paragraph</h3>
+                </hgroup>
+                <p>Here we have another paragraph stating random stuff but this blog is starting to come together which is promising. I am sitting here listening toi an awesome mix by Kaytranda!</p>
+              </article>
+            </section>
+            <aside>
+              <section class="aside-section">
+                <h2>Drop A Line</h2>
+                <a href="https://twitter.com/DL_Anthony">Twitter</a>
+                <a href="https://www.facebook.com/devon.anthony.3781">Book de Face</a>
+                <a href="mailto:jon@example.org">Email Devon</a>
+              </section>
+
+              <section class"contact-details">
+                <h2>Address</h2>
+                <p>(214) 543-0825 1300 Crossing Place Lane
+                  Austin, TX 78741
+                  MakerSquare Front End</p>
+                </section>
+                <footer>
+                  &copy; 2014 Devon's Blog
+                </footer>
+              </div><!-- .wrapper -->
+            </body>
+            </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
